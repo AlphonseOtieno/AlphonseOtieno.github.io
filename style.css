@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+}
+
+nav {
+    height: 80px;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: calc((100vw - 1300px) / 3); /* Keep right padding for centering */
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 0.5rem;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-display {
+    width: 500px; /* Adjust image container size */
+    height: 350px; /* Adjust image container height */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#galleryImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+
+
+.image-text-pair {
+    display: flex;
+    align-items: center; /* Aligns the image and paragraph vertically */
+    justify-content: flex-end; /* Aligns the image and paragraph to the right */
+    margin-bottom: 20px; /* Space between each image-text pair */
+    margin-right: 60rem;
+    margin-bottom: 40px;
+}
+
+.image-text-pair img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    transition: transform 0.3s ease
+}
+
+.aligned-image {
+    width: 300px; /* Adjust image width */
+    height: auto;
+    margin-right: 20px; /* Space between the image and paragraph */
+    border-radius: 10px;
+}
+
+.aligned-paragraph {
+    max-width: 600px; /* Adjust paragraph width */
+    text-align: justify; /* Justifies text for a clean look */
+}
+
+
+
+
+.arrow {
+    background-color: #5393ce;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin: 50 20px;
+    border-radius: 50%;
+}
+
+.arrow:hover {
+    background-color: #5393ce;
+}
+
+#pdfContainer {
+    width: 100vh; /* Larger width */
+    height: 80vh; /* Takes up 80% of the viewport height */
+    display: block; /* Ensure it's visible */
+    margin-top: 20px;
+    margin-right: 30rem;
+    margin-left: 0; /* Pushes the iframe to the right */
+    border: 2px solid #5393ce; /* Optional: adds a border for better visibility */
+    border-radius: 10px; /* Optional: rounds the corners */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #5393ce;
+}
+
+.hero {
+    background: #5393ce;
+    padding: 20px; /* Adjust padding to reduce whitespace */
+    flex: 1; /* Allow hero section to take remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.column-left h1, .column-left p {
+    margin-left: 1.5rem;
+}
+.column-left h1 {
+    font-size: xx-large;
+}
+
+.column-left p
+{
+    margin-top: 1rem; /* Adjust this value to move the paragraph up */
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-left: 1.5rem; 
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border: none;
+    color: #5393ce;
+    background: #000;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 1.5rem;
+    transition: background 0.3s, color 0.3s;
+    margin-bottom: 20px; /* Ensure no extra spacing */
+}
+
+/*photo*/
+.column-right {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center vertically within the container */
+    margin-left: auto; /* Push photo to the right within the column */
+}
+
+.column-right img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for animations */
+}
+
+.column-right img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+
+/*no longer photo*/
+
+button:hover {
+    background: #fff;
+    color: #000;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: auto; /* Push footer to bottom */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    color: #5393ce;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+
+.contact-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.email-form label {
+    margin-top: 2rem;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+.email-form input,
+.email-form textarea {
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-form button{
+    margin-top: 1rem;
+    margin-left: 0px;
+}

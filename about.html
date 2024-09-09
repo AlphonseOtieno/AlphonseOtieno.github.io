@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title> 
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <div class="logo">alphonse otieno.</div>
+        </a>
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="column-left">
+                <h1>About me.</h1>
+                <div class="column-right">
+                    <!-- gallery-->
+                    <div class="gallery-container">
+                        <button class="arrow" id="prev" onclick="prevImage()">&#10094;</button> <!-- Left arrow -->
+                        
+                        <div class="image-display">
+                            <img id="galleryImage" src="img1.jpg" alt="Photo 1">
+                        </div>
+                        
+                        <button class="arrow" id="next" onclick="nextImage()">&#10095;</button> <!-- Right arrow -->
+                    </div>
+                
+                    <script src="script.js"></script>
+
+                    <!-- gallery end-->
+                </div>
+                <p>I'm currently a Junior and recent transfer to Virginia Tech, studying Computer Science.</p>
+                <p>I chose computer science as my major due to the ability to create cool things learning it gives you. 
+                From websites to mobile applications that make people's lives easier, there's so much out there to learn and do with 
+                software. I would love to make something that helps people express their artistic capabilities. In addition, as an 
+                avid sports fan, I'd like to use what I learn to help deliver relevant statistics as well as improve the viewing experience.  
+                As a career, I like how you can directly impact people's daily lives with what you choose to create.</p>
+                <br>
+                <a href="projects.html"><button>Check out what I'm working on.</button></a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <ul class="social-links">
+                <li><a href="https://instagram.com/alph.o_" target="_blank">Instagram</a></li>
+                <li><a href="https://github.com/AlphonseOtieno" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/alphonse-otieno-903a09268/" target="_blank">LinkedIn</a></li>
+            </ul> <br>
+            <p>Personal website + portfolio by Alphonse Otieno built with HTML, CSS and JavaScript.</p>
+        </div>
+    </footer>
+</body>
+</html>

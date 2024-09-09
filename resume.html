@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title> 
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <div class="logo">alphonse otieno.</div>
+        </a>
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <h1>My resume.</h1>
+        <div class="hero-container">
+            
+            <div class="column-left">
+                
+            </div>
+        </div>
+        <div class="column-right">
+            <iframe id="pdfContainer" src="Alphonse_Resume_2024.pdf" title="Resume" frameborder="0"></iframe>
+            <script>
+                function showPDF() {
+                    var pdfContainer = document.getElementById('pdfContainer');
+                    pdfContainer.style.display = 'block'; // Show the PDF
+                }
+            </script>
+        </div>
+
+    </section>
+
+    
+    <footer>
+        <div class="footer-container">
+            <ul class="social-links">
+                <li><a href="https://instagram.com/alph.o_" target="_blank">Instagram</a></li>
+                <li><a href="https://github.com/AlphonseOtieno" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/alphonse-otieno-903a09268/" target="_blank">LinkedIn</a></li>
+            </ul> <br>
+            <p>Personal website + portfolio by Alphonse Otieno built with HTML, CSS and Javascript.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
